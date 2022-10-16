@@ -31,8 +31,8 @@
     background: rgb(168,0,90);
     background: linear-gradient(90deg, rgb(168, 0, 56) 0%, rgb(54, 0, 29) 100%);
     color: white;
-    position: fixed;
-    
+    position: fixed;    
+    z-index: 1;
 }
 
 /* Logo panini */
@@ -88,22 +88,110 @@
     width: 100%;
     grid-area: cuerpo;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px darkgray;
+    text-shadow: 1px 1px 2px rgb(110,30,130);
     text-align: left;
     text-shadow: 1px 1px 2px rgb(110,30,130);
+
+    margin-top: 80px;
     min-height: 500px;
     
 }
 
+.contenedor .cuerpo-contacto {
+    grid-area: cuerpo;
+    /* background-color: rgb(205, 15, 70); */
+    background: rgb(205, 15, 70);
+    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(110,30,130);
+    /* text-align: left; */
+    text-shadow: 1px 1px 3px rgb(110,30,130);
+    display: flex;
+    justify-content: center;
+
+    /* Experimental */
+    margin-top: 80px;
+    min-height: 400px;
+    
+}
+
+.cuerpo-contacto .divPrincipal{
+    background-color: white;
+    text-align: center;
+    width: 65%;
+    height: 95%;
+    border-radius: 50px;
+    /* background-color: rgb(110,30,130); */
+    background: rgb(110,30,130);
+    background: linear-gradient(100deg, rgb(126, 33, 150) 0%, rgb(88, 6, 109) 100%);
+    text-shadow: 1px 1px 3px rgb(71, 7, 25);
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+}
+
+#logo-insta{
+    max-width: 75px;
+    opacity: 0.3;
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
+    z-index: 2;
+}
+
+#logo-insta:hover{
+    opacity: 1;
+    transition: 0.8s;
+}
+#logo-face{
+    max-width: 75px;
+    opacity: 0.3;
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
+    z-index: 2;
+}
+#logo-face:hover{
+    opacity: 1;
+    transition: 0.8s;
+}
+
+
+#formularioContacto{
+    color: rgb(64, 14, 77);
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    padding: 3px;
+}
+
+#botonContacto{
+    color: rgb(64, 14, 77);
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 3px;
+    opacity: 0.5;
+}
+#botonContacto:hover{
+    /* background-color: rgb(168, 0, 56);
+    color: white; */
+    opacity: 1;
+}
+
 .contenedor .cuerpo {
     grid-area: cuerpo;
-    background-color: rgb(205, 15, 70);
+    background: rgb(205, 15, 70);
+    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px darkgray;
+    text-shadow: 1px 1px 2px rgb(110,30,130);
     text-align: left;
     text-shadow: 1px 1px 3px rgb(110,30,130);
 
+
     /* Experimental */
+    margin-top: 80px;
     min-height: 500px;
 }
 
@@ -159,6 +247,17 @@
 
 
 /* Media Q */
+
+@media screen and (max-width: 875px){
+    #logo-insta{
+        max-width: 50px;
+    }
+    #logo-face{
+        max-width: 50px;
+        
+    }
+}
+
 @media screen and (max-width: 768px){
     .contenedor .header {
         display: flex;
@@ -190,4 +289,15 @@
     .contenedor .footer img{
         max-width: 70px;
     }
+
+    .cuerpo-contacto .divPrincipal{
+        min-height: 470px;
+        
+    }
+    .cuerpo-contacto div{
+        min-width: 90%;
+        min-height: 90%;
+        
+    }
 }
+
