@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header"
+                        "cuerpo cuerpo"
+                        "footer footer";
+}
+
+.contenedor > div,
+.contenedor .header, 
+.contenedor .cuerpo, 
+.contenedor .footer {
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+/* --------------------- */
+/* HEADER */
+.contenedor .header {
+    grid-area: header;
+    min-width: 100%;
+    background: rgb(168,0,90);
+    background: linear-gradient(90deg, rgb(168, 0, 56) 0%, rgb(54, 0, 29) 100%);
+    color: white;
+    position: fixed;
+    
+}
+
+/* Logo panini */
+.contenedor .header .logo img {
+    float: left;
+    max-width: 200px;
+    opacity: 0.5;
+}
+
+.contenedor .header .logo img:hover {
+    opacity: 1;
+    transition: 0.8s;
+}
+
+/* Menu */
+.contenedor .header .menu {
+    padding-right: 50px;
+    float: right;
+}
+
+.menu > a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);
+}
+
+.menu > a:hover {
+    background-color: rgb(151, 0, 81);
+    border-radius: 50px;
+    transition: 0.8s;
+}
+
+.menu img{
+    max-width: 22.5px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(117deg) brightness(109%) contrast(109%);
+}
+/* --------------------- */
+
+
+
+/* --------------------- */
+/* CUERPO */
+.contenedor .cuerpo-index {
+    background-image: url("../images/fondoindex.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    grid-area: cuerpo;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px darkgray;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgb(110,30,130);
+    min-height: 500px;
+    
+}
+
+.contenedor .cuerpo {
+    grid-area: cuerpo;
+    background-color: rgb(205, 15, 70);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px darkgray;
+    text-align: left;
+    text-shadow: 1px 1px 3px rgb(110,30,130);
+
+    /* Experimental */
+    min-height: 500px;
+}
+
+
+.boton {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(110,30,130);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: rgb(181, 116, 197);
+    transition: 0.8s;
+}
+/* --------------------- */
+
+
+
+
+/* --------------------- */
+/* FOOTER */
+.contenedor .footer {
+    grid-area: footer;
+    max-width: 100%;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px rgb(82, 82, 82);
+    color: rgb(255, 255, 255);
+    padding: 100px;
+    background: rgb(110,30,130);
+    background: linear-gradient(90deg, rgb(168, 0, 56) 0%, rgb(54, 0, 29) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer a{
+    color: white;
+}
+
+.footer img{
+    margin-bottom: 5px;
+    max-width: 90px;
+    opacity: 0.5;
+}
+
+.footer img:hover{
+    opacity: 1;
+    transition: 0.8s;
+}
+/* --------------------- */
+
+
+/* Media Q */
+@media screen and (max-width: 768px){
+    .contenedor .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-items: center;
+        
+    }
+
+    .contenedor .header .menu >a{
+        font-size: 14px;
+        padding: 10px 7px;
+    }
+
+    .contenedor .header .menu img {
+        max-width: 18px;
+    }
+
+    .contenedor .cuerpo-index p,
+                                h1{
+        max-width: 320px;
+    }
+
+    .contenedor .footer {
+        font-size: 14px;
+    }
+
+    .contenedor .footer img{
+        max-width: 70px;
+    }
+}
