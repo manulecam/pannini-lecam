@@ -81,6 +81,7 @@
 /* --------------------- */
 /* CUERPO */
 .contenedor .cuerpo-index {
+    padding-left: 75px;
     background-image: url("../images/fondoindex.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -189,10 +190,15 @@
     background: rgb(205, 15, 70);
     background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(161, 13, 55) 100%);
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgb(39, 0, 49);
+    text-shadow: 3px 3px 5px rgb(44, 0, 12);
     text-align: left;
     /* Experimental */
     margin-top: 80px;
+    text-align: justify;
+}
+
+.cuerpo-terminos h1 {
+    text-align: center;
 }
 
 .contenedor .cuerpo-shop {
@@ -270,7 +276,7 @@
     grid-area: footer;
     max-width: 100%;
     font-weight: lighter;
-    text-shadow: 1px 1px 1px rgb(82, 82, 82);
+    text-shadow: 3px 3px 3px rgb(46, 0, 0);
     color: rgb(255, 255, 255);
     padding: 100px;
     background: rgb(110,30,130);
@@ -287,12 +293,12 @@
 .footer img{
     margin-bottom: 5px;
     max-width: 90px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .footer img:hover{
     opacity: 1;
-    transition: 0.8s;
+    transition: 0.7s;
 }
 /* --------------------- */
 
@@ -352,3 +358,9 @@
     }
 }
 
+@media screen and (max-width: 380px){
+    .contenedor .cuerpo-index p,
+                                h1{
+        max-width: 290px;
+    }
+}
