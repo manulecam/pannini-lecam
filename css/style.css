@@ -96,6 +96,9 @@
     min-height: 500px;
     
 }
+.contenedor .cuerpo-index h1{
+    margin-top: 160px;
+}
 
 .contenedor .cuerpo-contacto {
     grid-area: cuerpo;
@@ -180,14 +183,17 @@
     opacity: 1;
 }
 
-.contenedor .cuerpo {
+.contenedor .cuerpo-shop {
     grid-area: cuerpo;
     background: rgb(205, 15, 70);
     background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgb(110,30,130);
+    text-shadow: 1px 1px 2px rgb(39, 0, 49);
     text-align: left;
-    text-shadow: 1px 1px 3px rgb(110,30,130);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 
 
     /* Experimental */
@@ -195,6 +201,33 @@
     min-height: 500px;
 }
 
+.cuerpo-shop .articulo {
+    margin-top: 10px;
+    text-align: center;
+    background-color: white;
+    color: rgb(43, 0, 54);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
+.cuerpo-shop .articulo a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 35px;
+    background-color: rgb(110,30,130);
+    opacity: 0.5;
+}
+.cuerpo-shop .articulo a:hover{
+    opacity: 1;
+}
+
+.cuerpo-shop img{
+    width: 250px;
+}
 
 .boton {
     text-decoration: none;
