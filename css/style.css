@@ -228,8 +228,6 @@
 
 .contenedor .cuerpo-shop {
     grid-area: cuerpo;
-    background: rgb(205, 15, 70);
-    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
     background-image: url("../images/fondoshop.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -241,12 +239,50 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-
-
-    /* Experimental */
     margin-top: 80px;
     min-height: 500px;
+}
+
+.contenedor .cuerpo-shop .contenedorArticulos {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(39, 0, 49);
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+
+.contenedor .cuerpo-shop .menuFiltros{
+    padding: 10px;
+    min-width: 250px;
+    width: 88%;
+    max-width: 1150px;
+    height: 90px;
+    /* background-color: white; */
+    background: #ffffffb4;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgb(36, 1, 1);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#botonFiltros{
+    text-decoration: none;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 8px rgb(36, 1, 1);
+    background-color: rgb(110,30,130);
+    padding: 10px 40px;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+#botonFiltros:hover{
+    opacity: 1;
+    transition: 0.8s;
 }
 
 .cuerpo-shop .articulo {
@@ -262,6 +298,7 @@
     border-radius: 5px;
     box-shadow: 3px 3px 8px rgb(36, 1, 1);
 }
+
 
 .cuerpo-shop .articulo a{
     text-decoration: none;
