@@ -132,7 +132,7 @@
     border-radius: 50px;
     /* background-color: rgb(110,30,130); */
     background: rgb(110,30,130);
-    background: linear-gradient(100deg, rgb(126, 33, 150) 0%, rgb(88, 6, 109) 100%);
+    background: linear-gradient(100deg, rgba(127, 33, 150, 0.94) 0%, rgba(88, 6, 109, 0.94) 100%);
     text-shadow: 1px 1px 3px rgb(71, 7, 25);
     padding-top: 15px;
     display: flex;
