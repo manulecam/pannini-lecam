@@ -23,8 +23,8 @@
 
 
 
-/* --------------------- */
-/* HEADER */
+/* --------------------------------------------------------------- */
+/*--------------- HEADER ---------------*/
 .contenedor .header {
     grid-area: header;
     min-width: 100%;
@@ -74,158 +74,35 @@
     max-width: 22.5px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(117deg) brightness(109%) contrast(109%);
 }
-/* --------------------- */
+/* --------------------------------------------------------------- */
 
 
 
-/* --------------------- */
-/* CUERPO */
+/* --------------------------------------------------------------- */
+/*--------------- INDEX ---------------*/
 .contenedor .cuerpo-index {
-    padding-left: 75px;
+    padding-left: 100px;
     background-image: url("../images/fondoindex.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     grid-area: cuerpo;
     color: rgb(255, 255, 255);
     text-align: left;
     text-shadow: 3px 3px 5px rgb(58, 0, 16);
     margin-top: 80px;
-    min-height: 500px;
+    min-height: 660px;
     
 }
 .contenedor .cuerpo-index h1{
     margin-top: 160px;
 }
+/* --------------------------------------------------------------- */
 
 
 
-.contenedor .cuerpo-contacto {
-    grid-area: cuerpo;
-    /* background-color: rgb(205, 15, 70); */
-    
-    background: rgb(205, 15, 70);
-    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
-    background-image: url("../images/fondocontacto.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgb(110,30,130);
-    /* text-align: left; */
-    text-shadow: 1px 1px 3px rgb(110,30,130);
-    display: flex;
-    justify-content: center;
-
-    /* Experimental */
-    margin-top: 80px;
-    min-height: 400px;
-    
-}
-
-.cuerpo-contacto .divPrincipal{
-    background-color: white;
-    text-align: center;
-    width: 65%;
-    height: 95%;
-    border-radius: 50px;
-    /* background-color: rgb(110,30,130); */
-    background: rgb(110,30,130);
-    background: linear-gradient(100deg, rgba(127, 33, 150, 0.94) 0%, rgba(88, 6, 109, 0.94) 100%);
-    text-shadow: 1px 1px 3px rgb(71, 7, 25);
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    /* overflow: scroll; */
-    box-shadow: 3px 3px 8px rgb(54, 0, 18);
-}
-.divPrincipal h1{
-    text-decoration: underline;
-}
-
-#logo-insta{
-    max-width: 75px;
-    opacity: 0.3;
-    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
-    z-index: 2;
-}
-
-#logo-insta:hover{
-    opacity: 1;
-    transition: 0.8s;
-}
-#logo-face{
-    max-width: 75px;
-    opacity: 0.3;
-    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
-    z-index: 2;
-}
-#logo-face:hover{
-    opacity: 1;
-    transition: 0.8s;
-}
-
-
-#formularioContacto{
-    color: rgb(64, 14, 77);
-    border-radius: 3px;
-    border: none;
-    text-decoration: none;
-    padding: 3px;
-    box-shadow: 3px 3px 8px rgb(39, 0, 49);
-}
-
-#botonContacto{
-    color: rgb(64, 14, 77);
-    background-color: white;
-    border: none;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 3px;
-    opacity: 0.5;
-    box-shadow: 3px 3px 8px rgb(39, 0, 49);
-}
-#botonContacto:hover{
-    /* background-color: rgb(168, 0, 56);
-    color: white; */
-    opacity: 1;
-}
-
-.contenedor .cuerpo-terminos {
-    grid-area: cuerpo;
-    background: rgb(205, 15, 70);
-    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(161, 13, 55) 100%);
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 5px rgb(44, 0, 12);
-    text-align: left;
-    /* Experimental */
-    margin-top: 80px;
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor .cuerpo-terminos .terminos{
-    /* background-color: rgb(110,30,130); */
-    background: rgb(110,30,130);
-    background: linear-gradient(100deg, rgb(126, 33, 150) 0%, rgb(64, 0, 80) 100%);
-    width: 70%;
-    padding: 40px 90px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 8px rgb(39, 0, 49);
-    text-align: center;
-    text-shadow: 2px 2px 3px rgb(23, 0, 29);
-}
-
-.terminos h1{
-    padding-bottom: 10px;
-    text-decoration: underline;
-}
-
+/* --------------------------------------------------------------- */
+/*--------------- SHOP ---------------*/
 .contenedor .cuerpo-shop {
     grid-area: cuerpo;
     background-image: url("../images/fondoshop.jpg");
@@ -258,8 +135,6 @@
     min-width: 250px;
     width: 88%;
     max-width: 1150px;
-    
-    /* background-color: white; */
     background: #ffffffb4;
     border-radius: 5px;
     box-shadow: 3px 3px 8px rgb(36, 1, 1);
@@ -305,7 +180,6 @@
     box-shadow: 3px 3px 8px rgb(36, 1, 1);
 }
 
-
 .cuerpo-shop .articulo a{
     text-decoration: none;
     color: white;
@@ -338,13 +212,142 @@
     background-color: rgb(181, 116, 197);
     transition: 0.8s;
 }
-/* --------------------- */
+/* --------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------- */
+/*--------------- CONTACTO ---------------*/
+.contenedor .cuerpo-contacto {
+    grid-area: cuerpo;
+    background: rgb(205, 15, 70);
+    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
+    background-image: url("../images/fondocontacto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(110,30,130);
+    text-shadow: 1px 1px 3px rgb(110,30,130);
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    min-height: 400px;
+    
+}
+
+.cuerpo-contacto .divPrincipal{
+    background-color: white;
+    text-align: center;
+    width: 65%;
+    height: 95%;
+    border-radius: 50px;
+    background: rgb(110,30,130);
+    background: linear-gradient(100deg, rgba(127, 33, 150, 0.94) 0%, rgba(88, 6, 109, 0.94) 100%);
+    text-shadow: 1px 1px 3px rgb(71, 7, 25);
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    box-shadow: 3px 3px 8px rgb(54, 0, 18);
+}
+.divPrincipal h1{
+    text-decoration: underline;
+}
+
+#logo-insta{
+    max-width: 75px;
+    opacity: 0.3;
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
+    z-index: 2;
+}
+
+#logo-insta:hover{
+    opacity: 1;
+    transition: 0.8s;
+}
+#logo-face{
+    max-width: 75px;
+    opacity: 0.3;
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
+    z-index: 2;
+}
+#logo-face:hover{
+    opacity: 1;
+    transition: 0.8s;
+}
+
+#formularioContacto{
+    color: rgb(64, 14, 77);
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    padding: 3px;
+    box-shadow: 3px 3px 8px rgb(39, 0, 49);
+}
+
+#botonContacto{
+    color: rgb(64, 14, 77);
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 3px;
+    opacity: 0.5;
+    box-shadow: 3px 3px 8px rgb(39, 0, 49);
+}
+#botonContacto:hover{
+    /* background-color: rgb(168, 0, 56);
+    color: white; */
+    opacity: 1;
+}
+/* --------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------- */
+/*--------------- TERMINOS ---------------*/
+.contenedor .cuerpo-terminos {
+    grid-area: cuerpo;
+    background: rgb(205, 15, 70);
+    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(161, 13, 55) 100%);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px rgb(44, 0, 12);
+    text-align: left;
+    /* Experimental */
+    margin-top: 80px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .cuerpo-terminos .terminos{
+    /* background-color: rgb(110,30,130); */
+    background: rgb(110,30,130);
+    background: linear-gradient(100deg, rgb(126, 33, 150) 0%, rgb(64, 0, 80) 100%);
+    width: 70%;
+    padding: 40px 90px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 8px rgb(39, 0, 49);
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(23, 0, 29);
+}
+
+.terminos h1{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------- */
 
 
 
 
-/* --------------------- */
-/* FOOTER */
+/* --------------------------------------------------------------- */
+/*--------------- FOOTER ---------------*/
 .contenedor .footer {
     grid-area: footer;
     max-width: 100%;
@@ -373,11 +376,13 @@
     opacity: 1;
     transition: 0.7s;
 }
-/* --------------------- */
+/* --------------------------------------------------------------- */
 
 
-/* Media Q */
 
+
+/* --------------------------------------------------------------- */
+/*--------------- Media Q ---------------*/
 @media screen and (max-width: 875px){
     #logo-insta{
         max-width: 50px;
@@ -407,10 +412,14 @@
         max-width: 18px;
     }
 
+    .contenedor .cuerpo-index {
+        padding: 60px;
+    }
     .contenedor .cuerpo-index p,
                                 h1{
         max-width: 320px;
     }
+
 
     .contenedor .footer {
         font-size: 14px;
@@ -439,3 +448,5 @@
         max-width: 290px;
     }
 }
+
+/* --------------------------------------------------------------- */
