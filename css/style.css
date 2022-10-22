@@ -41,7 +41,6 @@
     max-width: 200px;
     opacity: 0.5;
 }
-
 .contenedor .header .logo img:hover {
     opacity: 1;
     transition: 0.8s;
@@ -63,7 +62,6 @@
     font-weight: lighter;
     text-shadow: 1px 1px 2px rgb(90, 90, 90);
 }
-
 .menu > a:hover {
     background-color: rgb(151, 0, 81);
     border-radius: 50px;
@@ -130,6 +128,8 @@
     max-width: 1200px;
 }
 
+
+/* FILTROS */
 .contenedor .cuerpo-shop .menuFiltros{
     padding: 10px;
     min-width: 250px;
@@ -161,11 +161,8 @@
     transition: 0.8s;
 }
 
-#labelFiltros{
-    display: flex;
-    flex-direction: column;
-}
 
+/* ARTICULOS */
 .cuerpo-shop .articulo {
     margin-top: 10px;
     text-align: center;
@@ -207,7 +204,6 @@
     box-shadow: 3px 3px 8px rgb(44, 0, 12);
     text-shadow: 3px 3px 3px rgb(37, 0, 46);
 }
-
 .boton:hover {
     background-color: rgb(181, 116, 197);
     transition: 0.8s;
@@ -254,17 +250,18 @@
     /* overflow: scroll; */
     box-shadow: 3px 3px 8px rgb(54, 0, 18);
 }
+
 .divPrincipal h1{
     text-decoration: underline;
 }
 
+/* IDS */
 #logo-insta{
     max-width: 75px;
     opacity: 0.3;
     filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(105%) contrast(104%);
     z-index: 2;
 }
-
 #logo-insta:hover{
     opacity: 1;
     transition: 0.8s;
@@ -279,7 +276,6 @@
     opacity: 1;
     transition: 0.8s;
 }
-
 #formularioContacto{
     color: rgb(64, 14, 77);
     border-radius: 3px;
@@ -288,7 +284,6 @@
     padding: 3px;
     box-shadow: 3px 3px 8px rgb(39, 0, 49);
 }
-
 #botonContacto{
     color: rgb(64, 14, 77);
     background-color: white;
@@ -340,7 +335,6 @@
     padding-bottom: 10px;
     text-decoration: underline;
 }
-
 /* --------------------------------------------------------------- */
 
 
