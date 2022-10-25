@@ -1,9 +1,15 @@
+/* --------------------------------------------------------------- */
 *{
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
+/* --------------------------------------------------------------- */
 
+
+
+/* --------------------------------------------------------------- */
+/*---------------             MAQUETADO             ---------------*/
 .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,11 +26,12 @@
     background-color: white;
     padding: 20px;
 }
+/* --------------------------------------------------------------- */
 
 
 
 /* --------------------------------------------------------------- */
-/*--------------- HEADER ---------------*/
+/*---------------               HEADER              ---------------*/
 .contenedor .header {
     grid-area: header;
     min-width: 100%;
@@ -77,7 +84,7 @@
 
 
 /* --------------------------------------------------------------- */
-/*--------------- INDEX ---------------*/
+/*---------------               INDEX               ---------------*/
 .contenedor .cuerpo-index {
     padding-left: 100px;
     background-image: url("../images/fondoindex.jpg");
@@ -100,7 +107,7 @@
 
 
 /* --------------------------------------------------------------- */
-/*--------------- SHOP ---------------*/
+/*---------------               SHOP                ---------------*/
 .contenedor .cuerpo-shop {
     grid-area: cuerpo;
     background-image: url("../images/fondoshop.jpg");
@@ -213,7 +220,61 @@
 
 
 /* --------------------------------------------------------------- */
-/*--------------- CONTACTO ---------------*/
+/*---------------              VOUCHER              ---------------*/
+.contenedor .cuerpoVoucher {
+    grid-area: cuerpo;
+    background: rgb(205, 15, 70);
+    background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
+    background-image: url("../images/fondocontacto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(54, 5, 66);
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    min-height: 500px;
+}
+
+.contenedor .figurita {
+    text-align: center;
+    width: 65%;
+    height: 95%;
+    border-radius: 50px;
+    background: rgb(220,80,40);
+    background: linear-gradient(100deg, rgb(220, 79, 40) 0%, rgb(235, 165, 43) 100%);
+    text-shadow: 1px 1px 3px rgb(71, 7, 25);
+    padding-top: 35px;
+    box-shadow: 3px 3px 8px rgb(54, 0, 18);
+}
+
+.contenedor .figurita img{
+    height: 310px;
+    box-shadow: 3px 3px 8px rgb(54, 0, 18);
+}
+
+#botonVoucher{
+    text-decoration: none;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 8px rgb(36, 1, 1);
+    background-color: rgb(214, 59, 16);
+    padding: 10px 40px;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+#botonVoucher:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+/* --------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------- */
+/*---------------              CONTACTO             ---------------*/
 .contenedor .cuerpo-contacto {
     grid-area: cuerpo;
     background: rgb(205, 15, 70);
@@ -304,7 +365,7 @@
 
 
 /* --------------------------------------------------------------- */
-/*--------------- TERMINOS ---------------*/
+/*---------------            TERMINOS               ---------------*/
 .contenedor .cuerpo-terminos {
     grid-area: cuerpo;
     background: rgb(205, 15, 70);
@@ -339,9 +400,8 @@
 
 
 
-
 /* --------------------------------------------------------------- */
-/*--------------- FOOTER ---------------*/
+/*---------------             FOOTER                ---------------*/
 .contenedor .footer {
     grid-area: footer;
     max-width: 100%;
@@ -376,7 +436,7 @@
 
 
 /* --------------------------------------------------------------- */
-/*--------------- Media Q ---------------*/
+/*---------------              Media Q              ---------------*/
 @media screen and (max-width: 875px){
     #logo-insta{
         max-width: 50px;
@@ -442,5 +502,4 @@
         max-width: 290px;
     }
 }
-
 /* --------------------------------------------------------------- */
