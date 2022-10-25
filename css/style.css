@@ -278,6 +278,11 @@
     border-radius: 6px;
 }
 
+.contenedor .figurita img:hover{
+    transform: scale(1.04, 1.04);
+    transition: 0.75s; 
+}
+
 #botonVoucher{
     text-decoration: none;
     border: none;
