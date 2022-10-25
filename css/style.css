@@ -267,6 +267,10 @@
     box-shadow: 3px 3px 8px rgb(54, 0, 18);
     min-height: 500px;
     padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .contenedor .figurita img{
@@ -277,7 +281,6 @@
     padding: 6px;
     border-radius: 6px;
 }
-
 .contenedor .figurita img:hover{
     transform: scale(1.04, 1.04);
     transition: 0.75s; 
@@ -290,6 +293,7 @@
     box-shadow: 3px 3px 8px rgb(36, 1, 1);
     background-color: rgb(121, 0, 64);
     padding: 10px 40px;
+    margin-top: 20px;
     border-radius: 25px;
     opacity: 0.7;
 }
@@ -317,14 +321,14 @@
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    min-height: 400px;
+    min-height: 600px;
     
 }
 
 .cuerpo-contacto .divPrincipal{
     background-color: white;
     text-align: center;
-    width: 65%;
+    width: 75%;
     height: 95%;
     border-radius: 50px;
     background: rgb(110,30,130);
@@ -502,13 +506,12 @@
         max-width: 320px;
     }
 
-
-    .contenedor .footer {
-        font-size: 14px;
+    .contenedor .figurita{
+        width: 95%;
     }
 
-    .contenedor .footer img{
-        max-width: 70px;
+    .contenedor .figurita img{
+        max-width: 200px;
     }
 
     .cuerpo-contacto .divPrincipal{
@@ -519,6 +522,14 @@
         min-width: 90%;
         min-height: 90%;
         
+    }
+
+    .contenedor .footer {
+        font-size: 14px;
+    }
+
+    .contenedor .footer img{
+        max-width: 70px;
     }
 
 
