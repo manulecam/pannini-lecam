@@ -64,10 +64,10 @@
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 8px 20px;
+    font-size: 18px;
     font-weight: lighter;
-    text-shadow: 1px 1px 2px rgb(90, 90, 90);
+    text-shadow: 2px 2px 3px rgb(37, 0, 0);
 }
 .menu > a:hover {
     background-color: rgb(151, 0, 81);
@@ -241,7 +241,7 @@
     grid-area: cuerpo;
     background: rgb(205, 15, 70);
     background: linear-gradient(800deg, rgb(204, 35, 83) 0%, rgb(189, 14, 63) 100%);
-    background-image: url("../images/seleccion.png");
+    background-image: url("../images/seleccion.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
