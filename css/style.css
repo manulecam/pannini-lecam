@@ -186,7 +186,7 @@
 
 
 /* ARTICULOS */
-.cuerpo-tienda .articulo {
+.contenedor .cuerpo-tienda .articulo {
     margin-top: 10px;
     text-align: center;
     background-color: white;
@@ -200,7 +200,7 @@
     box-shadow: 3px 3px 8px rgb(36, 1, 1);
 }
 
-.cuerpo-tienda .articulo a{
+.contenedor .cuerpo-tienda .articulo a{
     text-decoration: none;
     color: white;
     margin-top: 10px;
@@ -210,11 +210,11 @@
     border-radius: 2px;
     box-shadow: 3px 3px 8px rgb(39, 0, 49);
 }
-.cuerpo-tienda .articulo a:hover{
+.contenedor .cuerpo-tienda .articulo a:hover{
     opacity: 1;
 }
 
-.cuerpo-tienda img{
+.contenedor .cuerpo-tienda img{
     width: 250px;
 }
 
